@@ -44,6 +44,8 @@ namespace Example.Core.ViewModels
             {
                 _selectedItem = value;
                 RaisePropertyChanged(() => SelectedItem);
+                
+                ShowViewModel<SettingsViewModel>(value.Title);
             }
         }
 
